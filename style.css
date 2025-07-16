@@ -38,6 +38,8 @@ body {
                 pointer-events: none;
                 transition: all 100ms ease-in;
                 width: auto;
+                white-space: nowrap;
+                padding: 0px 3px;
             }
             
             input:focus ~ label, input:not(:placeholder-shown) ~ label {
@@ -45,8 +47,6 @@ body {
                 color: var(--hoverColor);
                 top: -18px;
                 background-color: white;
-                padding: 0px 3px;
-                font-size: small;
             }
             
             a {
@@ -66,7 +66,7 @@ body {
                 color: gray
             }
             
-            input[type=text], input[type=password] {
+            input {
                 margin: 5px;
                 padding: 7px 10px;
                 width: 250px;
@@ -76,7 +76,7 @@ body {
                 outline: none;
             }
 
-            input[type=text]:focus, input[type=password]:focus {
+            input:focus {
                 border: 2px solid var(--hoverColor);
                 border-radius: 5px;
             }
@@ -94,6 +94,7 @@ body {
 
             button[type=submit]:hover {
                 background-color: var(--hoverColor);
+                cursor: pointer;
             }
 
             .form {
@@ -123,13 +124,43 @@ body {
         }
     }
 
-    .left {
+    .left{
         width: 700px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         background-color: var(--hoverColor);
+
+        .title {
+            font-size: 90px;
+            color: white;
+            letter-spacing: 15px;
+            margin: 50px 0px 0px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2 {
+            color: white;
+            margin: 0px;
+            font-style: italic;
+        }
+
+        h3 {
+            margin: 0px;
+            position: relative;
+            color: white;
+            left: 90px;
+        }
+
+        h5 {
+            color: white;
+        }
+
+        img {
+            width: 450px;
+        }
+        
     }
 }
 
