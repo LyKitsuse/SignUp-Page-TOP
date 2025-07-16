@@ -140,17 +140,26 @@ body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        h2 {
+        h3 {
             color: white;
             margin: 0px;
-            font-style: italic;
+
         }
 
-        h3 {
-            margin: 0px;
-            position: relative;
-            color: white;
-            left: 90px;
+        #review_container {
+            transition: opacity 0.5s ease-in-out;
+                
+            h2 {
+                color: white;
+                margin: 0px;
+                font-style: italic;
+                max-width: 500px;
+                text-align: center;
+            }
+        }
+
+        #review-container.fade {
+            opacity: 0;
         }
 
         h5 {
