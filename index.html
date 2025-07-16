@@ -9,31 +9,45 @@
 <body>
     <div id="main">
         <div class="left">
+            <h1></h1>
+        </div>
+        <div class="right">
             <form action="https://www.example.com" method="post">
-                <h1>Create an Account</h1>
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username">
+                <h1 style="font-size: xx-large;">Create your account</h1>
+                <div class="form">
+                    <div class="form container">
+                        <img src="assets/user.svg">
+                        <input type="text" id="username" name="username" required placeholder="">
+                        <label for="username">Username</label>
+                    </div>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
+                    <div class="form container">
+                        <img src="assets/envelope.svg">
+                        <input type="text" id="email" name="email" required placeholder="">
+                        <label for="email">Email</label>
+                    </div>
 
-                <label for="password" required>Password</label>
-                <input type="password" id="password" name="password">
-
-                <label for="confirmPass" required>Confirm Password</label>
-                <input type="password" id="confirmPass">
-
+                    <div class="form container">
+                        <img src="assets/lock.svg">
+                        <input type="password" id="password" name="password" required min="5" placeholder="">
+                        <label for="password" required>Password</label>
+                    </div>
+                    
+                    <div class="form container">
+                        <img src="assets/lock.svg">
+                        <input type="password" id="confirm_password" required min="5" placeholder="">
+                        <label for="confirm_password" required>Confirm Password</label>
+                    </div>
+                </div>
+                
                 <button type="submit">Create Account</button>
 
                 <p>Already have an account? <a href="">Log in</a></p>
+
+                <p class="info">By creating an account, you agree to the <a href="https://youtu.be/dQw4w9WgXcQ?si=Gcfqy3l9yE5Wq3_b">Terms of Service</a> and <a href="https://youtu.be/UIp6_0kct_U?si=XxeXR7-JoJ-Eqvxu">Privacy Policy</a></a></p>
             </form>
         </div>
-        <div class="right">
-            <!-- logo -->
-             <h1>Hello</h1>
-        </div>
     </div>
-
     <!-- <script> -->
 </body>
 </html>
